@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3CC545CB228D0BF70085FC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC545CA228D0BF70085FC7D /* AppDelegate.swift */; };
-		3CC545CD228D0BF70085FC7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC545CC228D0BF70085FC7D /* ViewController.swift */; };
 		3CC545D0228D0BF70085FC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC545CE228D0BF70085FC7D /* Main.storyboard */; };
 		3CC545D2228D0BF90085FC7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC545D1228D0BF90085FC7D /* Assets.xcassets */; };
 		3CC545D5228D0BF90085FC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC545D3228D0BF90085FC7D /* LaunchScreen.storyboard */; };
+		3CC545FC228D10320085FC7D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC545FB228D10320085FC7D /* Model.swift */; };
+		3CC545FE228D11870085FC7D /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC545FD228D11870085FC7D /* MemoListTableViewController.swift */; };
+		3CC846242293C6350098F53D /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC846232293C6350098F53D /* ComposeViewController.swift */; };
+		3CC846262293D4550098F53D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC846252293D4550098F53D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CC545C7228D0BF70085FC7D /* kxmemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kxmemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC545CA228D0BF70085FC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CC545CC228D0BF70085FC7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CC545CF228D0BF70085FC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CC545D1228D0BF90085FC7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC545D4228D0BF90085FC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CC545D6228D0BF90085FC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC545FB228D10320085FC7D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3CC545FD228D11870085FC7D /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
+		3CC846232293C6350098F53D /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		3CC846252293D4550098F53D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		3CC545C9228D0BF70085FC7D /* kxmemo */ = {
 			isa = PBXGroup;
 			children = (
+				3CC545DC228D0D080085FC7D /* Model */,
 				3CC545CA228D0BF70085FC7D /* AppDelegate.swift */,
-				3CC545CC228D0BF70085FC7D /* ViewController.swift */,
 				3CC545CE228D0BF70085FC7D /* Main.storyboard */,
 				3CC545D1228D0BF90085FC7D /* Assets.xcassets */,
 				3CC545D3228D0BF90085FC7D /* LaunchScreen.storyboard */,
 				3CC545D6228D0BF90085FC7D /* Info.plist */,
+				3CC545FD228D11870085FC7D /* MemoListTableViewController.swift */,
+				3CC846232293C6350098F53D /* ComposeViewController.swift */,
+				3CC846252293D4550098F53D /* DetailViewController.swift */,
 			);
 			path = kxmemo;
+			sourceTree = "<group>";
+		};
+		3CC545DC228D0D080085FC7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CC545FB228D10320085FC7D /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC545CD228D0BF70085FC7D /* ViewController.swift in Sources */,
 				3CC545CB228D0BF70085FC7D /* AppDelegate.swift in Sources */,
+				3CC545FC228D10320085FC7D /* Model.swift in Sources */,
+				3CC846262293D4550098F53D /* DetailViewController.swift in Sources */,
+				3CC545FE228D11870085FC7D /* MemoListTableViewController.swift in Sources */,
+				3CC846242293C6350098F53D /* ComposeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kxmemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kxmemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
